@@ -1,13 +1,13 @@
-package com.ravi.antdBack;
+package com.ravi.waterlilly;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AntdBackApplication {
+public class VillaWaterLillyBackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AntdBackApplication.class, args);
+		SpringApplication.run(VillaWaterLillyBackendApplication.class, args);
 	}
 
 }

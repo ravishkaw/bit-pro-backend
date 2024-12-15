@@ -1,4 +1,4 @@
-package com.ravi.antdBack.config;
+package com.ravi.waterlilly.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
