@@ -1,21 +1,24 @@
 package com.ravi.waterlilly.exception;
 
-public class ResourceNotFoundException extends RuntimeException{
+// Custom exception for handling resource not found errors.
+public class ResourceNotFoundException extends RuntimeException {
     String resourceName;
     String field;
-    String fieldName;
+    String fieldValue;
     Long fieldId;
 
     public ResourceNotFoundException() {
     }
 
-    public ResourceNotFoundException(String resourceName, String field, String fieldName) {
-        super(String.format("%s not found with %s : %s", resourceName, field, fieldName));
+    //Constructor for exceptions where the field value is a string.
+    public ResourceNotFoundException(String resourceName, String field, String fieldValue) {
+        super(String.format("%s not found with %s : %s", resourceName, field, fieldValue));
         this.resourceName = resourceName;
         this.field = field;
-        this.fieldName = fieldName;
+        this.fieldValue = fieldValue;
     }
 
+    //Constructor for exceptions where the field value is a number
     public ResourceNotFoundException(String resourceName, String field, Long fieldId) {
         super(String.format("%s not found with %s : %d", resourceName, field, fieldId));
         this.resourceName = resourceName;
